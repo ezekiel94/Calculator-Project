@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --primary-color: #D4D4D2;
+    --primary-color-darker: #000;
+    --primary-color-dark:  hsl(0, 0%, 30%);
+    --primary-color-light:  hsl(0, 0%, 40%);
+    --primary-color-lighter:  hsl(0, 0%, 50%);
+   
+    --special-color: #FF9500;
+    --special-light-color: #E6993C;
+    --special-lighter-color: #FFD280;
+    --text-color: #ffffff;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.housing{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+.calculator-container{
+    width: 35%;
+    height: auto;
+    background-color: var(--primary-color-darker);
+    border-radius: 0.8rem;
+    white-space: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input{
+    width: 100%;
+    padding: 2rem;
+    border: none;
+    text-align: right;
+    background-color: #505050;
+    font-size: 5rem;
+    outline: none;
+    color: var(--text-color);
+}
+
+.all-number-and-symbol-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 1.3rem;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;  
+}
+
+button{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: var(--primary-color-dark);
+    color: var(--text-color);
+}
+
+button:hover{
+    background-color: var(--primary-color-light);
+}
+
+button:active{
+    background-color: var(--primary-color-lighter);
+}
+
+.operators-btn{
+    background-color: var(--special-color);
+}
+
+.operators-btn:hover{
+    background-color: var(--special-light-color);
+}
+
+.operators-btn:hover{
+    background-color: var(--special-lighter-color);
+}
+
+
+

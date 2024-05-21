@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    
+    <section class="housing">
+        <div class="calculator-container">
+            <input id="display" readonly>
+
+            <div class="all-number-and-symbol-container">
+                <button onclick="showToDisplay(`+`)" class="operators-btn">+</button>
+                <button onclick="showToDisplay(`7`)">7</button>
+                <button onclick="showToDisplay(`8`)">8</button>
+                <button onclick="showToDisplay(`9`)">9</button>
+                <button onclick="showToDisplay(`-`)" class="operators-btn">-</button>
+                <button onclick="showToDisplay(`4`)">4</button>
+                <button onclick="showToDisplay(`5`)">5</button>
+                <button onclick="showToDisplay(`6`)">6</button>
+                <button onclick="showToDisplay(`*`)" class="operators-btn">*</button>
+                <button onclick="showToDisplay(`1`)">1</button>
+                <button onclick="showToDisplay(`2`)">2</button>
+                <button onclick="showToDisplay(`3`)">3</button>
+                <button onclick="showToDisplay(`/`)" class="operators-btn">/</button>
+                <button onclick="showToDisplay(`0`)">0</button>
+                <button onclick="showToDisplay(`.`)">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()" class="operators-btn">AC</button>
+            </div>
+        </div>
+    </section>
+
+
+<script src="./index.js"></script>
+</body>
+</html>
